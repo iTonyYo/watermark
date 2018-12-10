@@ -382,6 +382,4 @@ vendor-manifest.json
 vendor.dll.js
 /data
 
-*.csv
-
 test/result.png
