@@ -1,0 +1,11 @@
+{
+  "linters": {
+    "src/**/*.js": [
+      "npx eslint --cache"
+    ]
+  },
+  "ignore": [
+    "**/scripts/**",
+    "**/coverage/**"
+  ]
+}

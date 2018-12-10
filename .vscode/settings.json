@@ -1,0 +1,62 @@
+{
+  "git.ignoreLimitWarning": true,
+  "terminal.integrated.rendererType": "canvas",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontFamily": "Hack",
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Hack",
+  "markdown.preview.fontSize": 12,
+  "files.autoSave": "onWindowChange",
+  "editor.cursorStyle": "line",
+  "editor.minimap.enabled": true,
+  "zenMode.restore": true,
+  "editor.letterSpacing": 1,
+  "editor.dragAndDrop": true,
+  "workbench.colorTheme": "Tomorrow Night Blue",
+  "workbench.iconTheme": "vscode-icons",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.har": true,
+    "**/.nyc_output": true,
+    "**/node_modules": true,
+    "**/data": true,
+    "**/dump.rdb": true
+  },
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.formatOnSave": false,
+  "terminal.integrated.scrollback": 500,
+  "terminal.integrated.confirmOnExit": true,
+  "editor.wordWrapColumn": 80,
+  "todohighlight.keywords": [
+    {
+      "text": "TODO:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px"
+    },
+    {
+      "text": "FIXME:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px"
+    },
+    {
+      "text": "PERFOMANCE:",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#EA514E"
+    },
+    {
+      "text": "PENDING",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#005cc5"
+    }
+  ],
+}
