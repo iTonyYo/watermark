@@ -20,7 +20,7 @@
     "lodash": "^4.17.11"
   },
   "private": false,
-  "name": "watermark",
+  "name": "@HUSO/watermark",
   "version": "0.0.0",
   "license": "MIT",
   "author": {
