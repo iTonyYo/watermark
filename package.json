@@ -20,8 +20,8 @@
     "lodash": "^4.17.11"
   },
   "private": false,
-  "name": "@HUSO/watermark",
   "version": "1.0.0",
+  "name": "watermark",
   "license": "MIT",
   "author": {
     "name": "iyowei",
@@ -44,5 +44,8 @@
     "make-dir": "^1.3.0",
     "trash": "^4.3.0",
     "write-file-atomic": "^2.3.0"
+  },
+  "publishConfig": {
+    "registry": "http://45.32.114.211:4873"
   }
 }

@@ -1,4 +1,5 @@
 "module name","license","repository"
+"@HUSO/watermark@0.0.0","MIT",""
 "@babel/polyfill@7.0.0","MIT","https://github.com/babel/babel/tree/master/packages/babel-polyfill"
 "@jimp/bmp@0.6.0","MIT",""
 "@jimp/core@0.6.0","MIT","https://github.com/oliver-moran/jimp"
@@ -67,7 +68,6 @@
 "tinycolor2@1.4.1","MIT","https://bgrins.github.com/TinyColor"
 "trim@0.0.1","MIT*",""
 "utif@2.0.1","MIT","https://github.com/photopea/UTIF.js"
-"watermark@0.0.0","MIT",""
 "xhr@2.5.0","MIT","https://github.com/naugtur/xhr"
 "xml-parse-from-string@1.0.1","MIT","https://github.com/Jam3/xml-parse-from-string"
 "xml2js@0.4.19","MIT","https://github.com/Leonidas-from-XIV/node-xml2js"
