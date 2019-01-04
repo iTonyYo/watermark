@@ -21,7 +21,7 @@
     "lodash": "^4.17.11"
   },
   "private": false,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "name": "@oopsunome/watermark",
   "license": "MIT",
   "author": {
