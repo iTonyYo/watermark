@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "DEBUG=WATERMARK:* node ./test",
+    "start": "DEBUG=WATERMARK:* npx babel-node ./dev",
     "clean": "npx babel-node ./scripts/clean",
     "reprepare": "npx babel-node ./scripts/re-prepare",
     "lint": "npx eslint --cache ./src/**/*.js",
