@@ -1,5 +1,9 @@
 # `watermark`
 
+给图片贴水印。
+
+> 暂时仅支持图片水印。
+
 ## 目录
 
 - [`watermark(mark, paper, options)`](#watermarkmark-paper-options)
@@ -11,23 +15,23 @@
 | ------- | ---- | -------------------------------- | ------ |
 | mark    | ✓         | 水印（暂时只支持图片形式的水印） | String |
 | paper   | ✓            | 指定贴水印的图片                 | String |
-| options |      | 选项（详细设置参见接下来的介绍） | Object |
+| options |      | 选项（详细配置参见接下来的介绍） | Object |
 
 **`options`**
 
 | 属性   | 描述                                             | 类型   |
 | ------ | ------------------------------------------------ | ------ |
-| gap    | 设置水印与边界的距离，当位置并非 `center` 时有效 | Number |
-| mark   | 设置水印（详细设置参见下面的介绍）               | Object |
-| output | 设置输出位置（详细设置参见下面的介绍）                   | Object |
+| gap    | 配置水印与边界的距离，当位置并非 `center` 时有效 | Number |
+| mark   | 配置水印（详细配置参见下面的介绍）               | Object |
+| output | 配置输出位置（详细配置参见下面的介绍）                   | Object |
 
 **`mark`**
 
 | 属性     | 描述                                                                                                                                                                                                                                                       | 类型   |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| opacity  | `0~1`, 设置水印透明度                                                                                                                                                                                                                                      | Number |
-| scale    | `0~1`, 设置水印缩放比例                                                                                                                                                                                                                                    | Number |
-| position | 设置水印位置, `center` 表示水平 & 垂直居中，`top-left` 或 `left-top` 表示左上角，`top-right` 或 `right-top` 表示右上角，`bottom-right` 或 `right-bottom` 表示右下角，`bottom-left` 或 `left-bottom` 表示左下角，`{ x: 0, y: 0 }`, 表示完全手动设置水印位置 | String |
+| opacity  | `0~1`, 配置水印透明度                                                                                                                                                                                                                                      | Number |
+| scale    | `0~1`, 配置水印缩放比例                                                                                                                                                                                                                                    | Number |
+| position | 配置水印位置, `center` 表示水平 & 垂直居中，`top-left` 或 `left-top` 表示左上角，`top-right` 或 `right-top` 表示右上角，`bottom-right` 或 `right-bottom` 表示右下角，`bottom-left` 或 `left-bottom` 表示左下角，`{ x: 0, y: 0 }`, 表示完全手动配置水印位置 | String |
 
 **`output`**
 
