@@ -1,8 +1,8 @@
 # 参与贡献
 
-首先，感谢你考虑为 [`data-uri-fns`][data-uri-fns] 做出贡献！正是像您这样的人，使得 [`data-uri-fns`][data-uri-fns] 成为一个非常好的工具。:tada::+1:
+首先，感谢你考虑为 [`watermark`][watermark] 做出贡献！正是像您这样的人，使得 [`watermark`][watermark] 成为一个非常好的工具。:tada::+1:
 
-[data-uri-fns]: #
+[watermark]: #
 
 遵循这些原则有助于传达您对其它开发人员时间上的尊重。作为回报，他们会及时解决您的问题、评估更改和帮助您最终确定 pull 请求等方面。
 
@@ -101,6 +101,7 @@ feat(新功能): 一个新功能
 
 #### 可补充使用的 Emoji
 
+* :beginner: `:beginner:` 第一次提交
 * :penguin: `:penguin:` 修复在 Linux 上的问题
 * :apple: `:apple:` 修复在 macOS 上的问题
 * :checkered_flag: `:checkered_flag:` 修复在 Windows
