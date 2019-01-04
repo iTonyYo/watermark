@@ -1,7 +1,8 @@
 {
   "linters": {
     "src/**/*.js": [
-      "npx eslint --cache"
+      "npx eslint --cache",
+      "yarn test"
     ]
   },
   "ignore": [
