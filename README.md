@@ -1,4 +1,4 @@
-# `watermark`
+# `@oopsunome/watermark`
 
 给图片贴水印。
 
@@ -19,10 +19,10 @@
 
 ```shell
 # 使用 NPM
-npm install watermark
+npm install @oopsunome/watermark
 
 # 使用 Yarn
-yarn add watermark
+yarn add @oopsunome/watermark
 ```
 
 ## 使用
@@ -60,7 +60,7 @@ yarn add watermark
 
 #### 示例
 ```javascript
-const watermark = require('watermark');
+const watermark = require('@oopsunome/watermark');
 
 (async () => {
   await watermark(
@@ -90,7 +90,7 @@ const watermark = require('watermark');
 
 **安装依赖**
 
-[`watermark`]() 使用 [`Yarn`](https://yarnpkg.com/zh-Hans/) 包管理器，执行 `yarn install` 安装依赖。
+[`@oopsunome/watermark`]() 使用 [`Yarn`](https://yarnpkg.com/zh-Hans/) 包管理器，执行 `yarn install` 安装依赖。
 
 **运行**
 
@@ -110,7 +110,7 @@ yarn test
 
 ## 证书
 
-[`watermark`][watermark] 获得了 MIT 许可，仔细查阅 [LICENSE.md][证书] 以了解详情。
+[`@oopsunome/watermark`][@oopsunome/watermark] 获得了 MIT 许可，仔细查阅 [LICENSE.md][证书] 以了解详情。
 
 ## 待办
 
@@ -124,7 +124,7 @@ yarn test
 - [X] ESlint 检测；
 - [X] 生成所有依赖的开源证书；
 - [ ] 更新日志
-- [ ] 谁在使用 [`watermark`][watermark]
+- [ ] 谁在使用 [`@oopsunome/watermark`][@oopsunome/watermark]
 - [ ] 完善 [贡献指南][贡献指南]
 - [ ] 使用 [David DM](https://david-dm.org/) 实现 `依赖是否最新` 检测；
 - [ ] 使用 [Travis CI](https://travis-ci.org/) 实现持续集成；
@@ -139,4 +139,4 @@ yarn test
 [贡献指南]: #
 [证书]: #
 [Node]: https://nodejs.org/
-[watermark]: #
+[@oopsunome/watermark]: #
