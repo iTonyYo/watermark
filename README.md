@@ -136,7 +136,7 @@ yarn test
 - [ ] 文档：维护策略
 - [ ] 性能测试；
 
-[贡献指南]: #
-[证书]: #
+[贡献指南]: https://github.com/iTonyYo/watermark/blob/master/CONTRIBUTING.md
+[证书]: https://github.com/iTonyYo/watermark/blob/master/LICENSE.md
 [Node]: https://nodejs.org/
 [@oopsunome/watermark]: #
