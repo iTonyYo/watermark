@@ -4,10 +4,7 @@
 
 给图片贴水印。
 
-> 暂时仅支持图片水印。
-
 ## 目录
-- [目录](#目录)
 - [安装](#安装)
 - [使用](#使用)
     - [`watermark(mark, paper, options)`](#watermarkmark-paper-options)
@@ -22,10 +19,10 @@
 
 ```shell
 # 使用 NPM
-npm install @oopsunome/watermark
+$ npm i @oopsunome/watermark
 
 # 使用 Yarn
-yarn add @oopsunome/watermark
+$ yarn add @oopsunome/watermark
 ```
 
 ## 使用
@@ -85,6 +82,9 @@ const watermark = require('@oopsunome/watermark');
 })();
 ```
 
+## 相关
+- [`@oopsunome/watermark-cli`][@oopsunome/watermark-cli] - 当前项目的命令行界面。
+
 ## 支持的图片格式
 
 - [bmp](https://github.com/oliver-moran/jimp/blob/master/packages/type-bmp)
@@ -101,7 +101,7 @@ const watermark = require('@oopsunome/watermark');
 
 **安装依赖**
 
-[`@oopsunome/watermark`]() 使用 [`Yarn`](https://yarnpkg.com/zh-Hans/) 包管理器，执行 `yarn install` 安装依赖。
+[`@oopsunome/watermark`][@oopsunome/watermark] 使用 [`Yarn`](https://yarnpkg.com/zh-Hans/) 包管理器，执行 `yarn install` 安装依赖。
 
 **运行**
 
@@ -151,4 +151,5 @@ yarn test
 [贡献指南]: https://github.com/iTonyYo/watermark/blob/master/CONTRIBUTING.md
 [证书]: https://github.com/iTonyYo/watermark/blob/master/LICENSE.md
 [Node]: https://nodejs.org/
-[@oopsunome/watermark]: #
+[@oopsunome/watermark]: https://github.com/iTonyYo/watermark
+[@oopsunome/watermark-cli]: https://github.com/iTonyYo/watermark-cli
