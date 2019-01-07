@@ -26,7 +26,6 @@ const debug = require('debug');
 const getMarkPos = require('./getMarkPos');
 
 const log = debug('WATERMARK:log');
-const error = debug('WATERMARK:error');
 
 module.exports = async function watermark(mark, paper, options) {
   try {
@@ -82,6 +81,6 @@ module.exports = async function watermark(mark, paper, options) {
         ),
       );
   } catch (err) {
-    error(err.toString());
+    throw err;
   }
 };

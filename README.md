@@ -10,6 +10,7 @@
 - [使用](#使用)
     - [`watermark(mark, paper, options)`](#watermarkmark-paper-options)
     - [示例](#示例)
+- [支持的图片格式](#支持的图片格式)
 - [参与开发](#参与开发)
 - [贡献指南](#贡献指南)
 - [证书](#证书)
@@ -82,6 +83,14 @@ const watermark = require('@oopsunome/watermark');
 })();
 ```
 
+## 支持的图片格式
+
+- [bmp](https://github.com/oliver-moran/jimp/blob/master/packages/type-bmp)
+- [gif](https://github.com/oliver-moran/jimp/blob/master/packages/type-gif)
+- [jpeg](https://github.com/oliver-moran/jimp/blob/master/packages/type-jpeg)
+- [png](https://github.com/oliver-moran/jimp/blob/master/packages/type-png)
+- [tiff](https://github.com/oliver-moran/jimp/blob/master/packages/type-tiff)
+
 ## 参与开发
 
 **准备开发环境**
@@ -115,6 +124,7 @@ yarn test
 ## 待办
 
 - [X] 支持图片水印；
+- [X] 识别不支持的图片格式；
 - [ ] 支持文字水印；(自定义字体、字体文件、颜色、尺寸、粗细等)
 - [ ] 支持给视频贴水印；
 - [ ] 支持 `解构` 或 `直接引用` 2 种暴露接口的方式；
