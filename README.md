@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/iTonyYo/watermark.svg?branch=master)](https://travis-ci.org/iTonyYo/watermark)
+[![Build Status](https://travis-ci.org/iTonyYo/watermark.svg?branch=master)](https://travis-ci.org/iTonyYo/watermark) [![dependencies Status](https://david-dm.org/iTonyYo/watermark/status.svg)](https://david-dm.org/iTonyYo/watermark)
 
 # `@oopsunome/watermark`
 
@@ -138,7 +138,7 @@ yarn test
 - [ ] 更新日志
 - [ ] 谁在使用 [`@oopsunome/watermark`][@oopsunome/watermark]
 - [ ] 完善 [贡献指南][贡献指南]
-- [ ] 使用 [David DM](https://david-dm.org/) 实现 `依赖是否最新` 检测；
+- [X] 使用 [David DM](https://david-dm.org/) 实现 `依赖是否最新` 检测；
 - [X] 使用 [Travis CI](https://travis-ci.org/) 实现持续集成；
 - [ ] 使用 [Coveralls](https://coveralls.io/) 可视化测试用例覆盖率；
 - [ ] 使用 [Codacy](https://www.codacy.com/) 实现代码质量检测；
