@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/iTonyYo/watermark.svg?branch=master)](https://travis-ci.org/iTonyYo/watermark) [![dependencies Status](https://david-dm.org/iTonyYo/watermark/status.svg)](https://david-dm.org/iTonyYo/watermark)
+[![Build Status](https://travis-ci.org/iTonyYo/watermark.svg?branch=master)](https://travis-ci.org/iTonyYo/watermark) [![Coverage Status](https://coveralls.io/repos/github/iTonyYo/watermark/badge.svg?branch=master)](https://coveralls.io/github/iTonyYo/watermark?branch=master) [![dependencies Status](https://david-dm.org/iTonyYo/watermark/status.svg)](https://david-dm.org/iTonyYo/watermark)
 
 # `@oopsunome/watermark`
 
