@@ -21,7 +21,7 @@
     "lodash": "^4.17.11"
   },
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "@oopsunome/watermark",
   "description": "给图片贴水印。",
   "license": "MIT",
