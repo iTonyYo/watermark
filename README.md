@@ -7,8 +7,9 @@
 ## 目录
 - [安装](#安装)
 - [使用](#使用)
-    - [`watermark(mark, paper, options)`](#watermarkmark-paper-options)
+    - [`watermark(mark, paper[, options])`](#watermarkmark-paper-options)
     - [示例](#示例)
+- [相关](#相关)
 - [支持的图片格式](#支持的图片格式)
 - [参与开发](#参与开发)
 - [贡献指南](#贡献指南)
@@ -27,36 +28,19 @@ $ yarn add @oopsunome/watermark
 
 ## 使用
 
-#### `watermark(mark, paper, options)`
+#### `watermark(mark, paper[, options])`
 
-| 属性    | 必须 | 描述                             | 类型   |
-| ------- | ---- | -------------------------------- | ------ |
-| mark    | ✓         | 水印（暂时只支持图片形式的水印） | String |
-| paper   | ✓            | 指定贴水印的图片                 | String |
-| options |      | 选项（详细配置参见接下来的介绍） | Object |
-
-**`options`**
-
-| 属性   | 描述                                             | 类型   |
-| ------ | ------------------------------------------------ | ------ |
-| gap    | 配置水印与边界的距离，当位置并非 `center` 时有效 | Number |
-| mark   | 配置水印（详细配置参见下面的介绍）               | Object |
-| output | 配置输出位置（详细配置参见下面的介绍）                   | Object |
-
-**`mark`**
-
-| 属性     | 描述                                                                                                                                                                                                                                                       | 类型   |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| opacity  | `0~1`, 配置水印透明度                                                                                                                                                                                                                                      | Number |
-| scale    | `0~1`, 配置水印缩放比例                                                                                                                                                                                                                                    | Number |
-| position | 配置水印位置, `center` 表示水平 & 垂直居中，`top-left` 或 `left-top` 表示左上角，`top-right` 或 `right-top` 表示右上角，`bottom-right` 或 `right-bottom` 表示右下角，`bottom-left` 或 `left-bottom` 表示左下角，`{ x: 0, y: 0 }`, 表示完全手动配置水印位置 | String |
-
-**`output`**
-
-| 属性     | 描述                         | 类型   |
-| -------- | ---------------------------- | ------ |
-| filename | 指定输出文件的名称，包括后缀 | String |
-| path     | 默认 `process.cwd()`         | String |
+- `mark` {String} 水印（暂时只支持图片水印）
+- `paper` {String} 画布
+- `options` {Object}
+  - `gap` {Number} 配置水印与边界的距离, 当位置并非 `center` 时有效
+  - `mark` {Object}
+    - `opacity` {Number} 配置水印透明度, **默认:** 0~1
+    - `scale` {Number} 配置水印缩放比例, **默认:** 0~1
+    - `position` {String|Object} 配置水印位置, `center` 表示水平 & 垂直居中，`top-left` 或 `left-top` 表示左上角，`top-right` 或 `right-top` 表示右上角，`bottom-right` 或 `right-bottom` 表示右下角，`bottom-left` 或 `left-bottom` 表示左下角，`{ x: 0, y: 0 }`, 表示完全手动配置水印位置
+  - `output` {Object}
+    - `filename` {String} 指定输出文件的名称，包括后缀
+    - `path` {String} 默认 `process.cwd()`
 
 #### 示例
 ```javascript
@@ -127,6 +111,7 @@ yarn test
 
 - [X] 支持图片水印；
 - [X] 识别不支持的图片格式；
+- [ ] 支持回传，成功处理完之后，显示输出位置；
 - [ ] 支持文字水印；(自定义字体、字体文件、颜色、尺寸、粗细等)
 - [ ] 支持给视频贴水印；
 - [ ] 支持 `解构` 或 `直接引用` 2 种暴露接口的方式；
