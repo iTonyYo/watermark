@@ -59,6 +59,21 @@ feat(新功能): 一个新功能
 新功能: :tada: 一个新功能
 ```
 
+**变更**，:m:
+```shell
+变更: :m: 对现有功能的变更。
+```
+
+**弃用**，:man_zombie:
+```shell
+弃用: :man_zombie: 已经不建议使用，准备很快移除的功能。
+```
+
+**安全**，:shield:
+```shell
+安全: :shield: 对安全的新增、改进、修改等。
+```
+
 **修复**，:bug:
 ```shell
 修复: :bug: 一个问题的修复
@@ -107,7 +122,6 @@ feat(新功能): 一个新功能
 * :checkered_flag: `:checkered_flag:` 修复在 Windows
  上的问题
 * :green_heart: `:green_heart:` 修复持续集成工具的报错
-* :lock: `:lock:` 处理安全方面的新增、改进、修改
 * :arrow_up: `:arrow_up:` 升级依赖
 * :arrow_down: `:arrow_down:` 降级依赖
 
