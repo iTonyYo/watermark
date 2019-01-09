@@ -6,7 +6,8 @@
     "lint": "npx eslint --cache ./src/**/*.js",
     "license": "npx babel-node ./scripts/license",
     "test": "npx nyc mocha --opts ./mocha.opts ./test/*-test.js",
-    "coverage": "npx nyc report --reporter=text-lcov | npx coveralls"
+    "coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
+    "changelog": "npx auto-changelog -p"
   },
   "main": "src/watermark.js",
   "engines": {
@@ -45,6 +46,7 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/register": "^7.0.0",
+    "auto-changelog": "^1.10.3",
     "babel-eslint": "^10.0.1",
     "chai": "^4.2.0",
     "chalk": "^2.4.2",

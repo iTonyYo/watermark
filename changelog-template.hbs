@@ -1,0 +1,25 @@
+# [`@oopsunome/watermark`](https://github.com/iTonyYo/watermark) 更新日志
+
+{{#each releases}}
+  {{#if href}}
+    ## [{{title}}]({{href}}){{#if tag}} - {{isoDate}}{{/if}}
+  {{else}}
+    ## {{title}}{{#if tag}} - {{isoDate}}{{/if}}
+  {{/if}}
+
+  {{#if summary}}
+    {{summary}}
+  {{/if}}
+
+  {{#if merges}}
+    ### 混合
+
+    {{#each merges}}
+      - {{#if href}}[[`#{{id}}`]({{href}})]{{/if}} {{{message}}}
+    {{/each}}
+  {{/if}}
+
+  {{#commit-list commits heading='#### 提交' message='新功能|修复|性能|文档|变更|弃用|安全|重构|测试|移除|工程|格式'}}
+    - {{#if href}}[[`{{shorthash}}`]({{href}})]{{/if}} {{{subject}}}
+  {{/commit-list}}
+{{/each}}
