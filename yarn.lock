@@ -3006,10 +3006,10 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-license-checker@^24.1.0:
-  version "24.1.0"
-  resolved "https://registry.yarnpkg.com/license-checker/-/license-checker-24.1.0.tgz#c9ccbac4cf18273a3c5ca3bf5c61d16cfd103d90"
-  integrity sha512-5X8X+Yyhezcb/+qj+JB02kysFPttWoi/7op0cdxkdOrkJ9l70ECvrJSWsRmz7q0ejYSiWs2hpkC0Gtr8L6i6cA==
+license-checker@^25.0.1:
+  version "25.0.1"
+  resolved "https://registry.yarnpkg.com/license-checker/-/license-checker-25.0.1.tgz#4d14504478a5240a857bb3c21cd0491a00d761fa"
+  integrity sha512-mET5AIwl7MR2IAKYYoVBBpV0OnkKQ1xGj2IMMeEFIs42QAkEVjRtFZGWmQ28WeU7MP779iAgOaOy93Mn44mn6g==
   dependencies:
     chalk "^2.4.1"
     debug "^3.1.0"

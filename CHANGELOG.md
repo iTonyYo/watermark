@@ -1,11 +1,7 @@
 # [`@oopsunome/watermark`](https://github.com/iTonyYo/watermark) 更新日志
 
-## [v1.0.5](https://github.com/iTonyYo/watermark/compare/v1.0.4...v1.0.5) - 2019-01-09
+## [v1.0.5](https://github.com/iTonyYo/watermark/compare/v1.0.5...v1.0.5) - 2019-01-09
 
-#### 提交
-
-- [[`7d7bde8`](https://github.com/iTonyYo/watermark/commit/7d7bde8f53e47681853f9514dd1338cd1581ad9c)] 工程: :clapper: 配置更新日志
-- [[`f2a6b30`](https://github.com/iTonyYo/watermark/commit/f2a6b302dfb86ad732f778b5a4a1d80a394e5971)] 文档: :memo: 更新文档
 ## [v1.0.4](https://github.com/iTonyYo/watermark/compare/v1.0.3...v1.0.4) - 2019-01-08
 
 #### 提交
