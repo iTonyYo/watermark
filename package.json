@@ -7,7 +7,9 @@
     "license": "npx babel-node ./scripts/license",
     "test": "npx nyc mocha --opts ./mocha.opts ./test/*-test.js",
     "coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
-    "changelog": "npx auto-changelog -p"
+    "changelog": "npx auto-changelog -p",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "main": "src/watermark.js",
   "engines": {
@@ -19,7 +21,8 @@
   "dependencies": {
     "debug": "^4.1.1",
     "jimp": "^0.6.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "snyk": "^1.189.0"
   },
   "private": false,
   "version": "1.0.5",
@@ -67,5 +70,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "snyk": true
 }
