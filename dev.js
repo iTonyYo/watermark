@@ -2,14 +2,14 @@ import { realpathSync } from 'fs';
 import { resolve } from 'path';
 
 const appDirectory = realpathSync(process.cwd());
-const resolveApp = relativePath => resolve(appDirectory, relativePath);
+const resolveCwd = relativePath => resolve(appDirectory, relativePath);
 
 const watermark = require('./src/watermark');
 
 (async () => {
   await watermark(
-    resolveApp('test/mark.png'),
-    resolveApp('test/paper.png'),
+    resolveCwd('test/mark.png'),
+    resolveCwd('test/paper.png'),
     {
       gap: 10,
       mark: {
@@ -19,7 +19,7 @@ const watermark = require('./src/watermark');
       },
       output: {
         filename: 'result.png',
-        path: resolveApp('test'),
+        path: resolveCwd('test'),
       },
     },
   );

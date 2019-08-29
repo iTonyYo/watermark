@@ -1,7 +1,7 @@
 const execa = require('execa');
 
-const { resolveApp } = require('./paths');
-const scriptsDir = resolveApp('scripts');
+const { resolveCwd } = require('./paths');
+const scriptsDir = resolveCwd('scripts');
 
 (async () => {
   await execa('node', [

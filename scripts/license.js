@@ -7,7 +7,7 @@ const makeDir         = require('make-dir');
 const writeFileAtomic = require('write-file-atomic');
 const chalk           = require('chalk');
 
-const { appDirectory } = require('./paths');
+const { appDirectory, docsPath } = require('./paths');
 
 /**
  * 异步保存报告，
@@ -57,7 +57,7 @@ licenseChecker.init({
   } else {
     saveCSV({
       csv     : data,
-      to      : appDirectory,
+      to      : docsPath,
       fileName: 'licenses-development.csv',
     });
   }
@@ -76,7 +76,7 @@ licenseChecker.init({
   } else {
     saveCSV({
       csv     : data,
-      to      : appDirectory,
+      to      : docsPath,
       fileName: 'licenses-production.csv',
     });
   }

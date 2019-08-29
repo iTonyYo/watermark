@@ -1,6 +1,6 @@
 const trash = require('trash');
-const { resolveApp } = require('./paths');
+const { resolveCwd } = require('./paths');
 
 trash([
-  resolveApp('.eslintcache'),
+  resolveCwd('.eslintcache'),
 ]);
