@@ -28,59 +28,55 @@ const getMarkPos = require('./getMarkPos');
 const log = debug('WATERMARK:log');
 
 module.exports = async function watermark(mark, paper, options) {
-  try {
-    const opts = merge({}, {
-      gap: 8,
-      mark: {
-        position: 'bottom-right',
-        scale: 1,
-        opacity: 1,
-      },
-      output: {
-        filename: `output${extname(paper)}`,
-        path: process.cwd(),
-      },
-    }, options);
+  const opts = merge({}, {
+    gap: 8,
+    mark: {
+      position: 'bottom-right',
+      scale: 1,
+      opacity: 1,
+    },
+    output: {
+      filename: `output${extname(paper)}`,
+      path: process.cwd(),
+    },
+  }, options);
 
-    log(`水印距离边界：${opts.gap}px`);
-    log(`水印位置：'${opts.mark.position}'`);
-    log(`水印缩放：${opts.mark.scale}`);
-    log(`水印透明度：${opts.mark.opacity}`);
-    log(`输出位置：${opts.output.path}/${opts.output.filename}`);
+  log(`水印距离边界：${opts.gap}px`);
+  log(`水印位置：'${opts.mark.position}'`);
+  log(`水印缩放：${opts.mark.scale}`);
+  log(`水印透明度：${opts.mark.opacity}`);
+  log(`输出位置：${opts.output.path}/${opts.output.filename}`);
 
-    const imgs = await Promise.all([
-      Jimp.read(mark),
-      Jimp.read(paper),
-    ]);
+  const imgs = await Promise.all([
+    Jimp.read(mark),
+    Jimp.read(paper),
+  ]);
 
-    const jimpMark = imgs[0].scale(opts.mark.scale);
-    const jimpPaper = imgs[1];
+  const jimpMark = imgs[0].scale(opts.mark.scale);
+  const jimpPaper = imgs[1];
 
-    const { x, y } = getMarkPos({
-      position: opts.mark.position,
-      gap: opts.gap,
-      jimpPaper,
+  const { x, y } = getMarkPos({
+    position: opts.mark.position,
+    gap: opts.gap,
+    jimpPaper,
+    jimpMark,
+  });
+
+  jimpPaper
+    .composite(
       jimpMark,
-    });
-
-    jimpPaper
-      .composite(
-        jimpMark,
-        x,
-        y,
-        {
-          mode: Jimp.BLEND_SOURCE_OVER,
-          opacitySource: opts.mark.opacity,
-          opacityDest: 1,
-        },
-      )
-      .write(
-        join(
-          opts.output.path,
-          `${opts.output.filename}`,
-        ),
-      );
-  } catch (err) {
-    throw err;
-  }
+      x,
+      y,
+      {
+        mode: Jimp.BLEND_SOURCE_OVER,
+        opacitySource: opts.mark.opacity,
+        opacityDest: 1,
+      },
+    )
+    .write(
+      join(
+        opts.output.path,
+        `${opts.output.filename}`,
+      ),
+    );
 };
