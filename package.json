@@ -1,14 +1,7 @@
 {
-  "scripts": {
-    "start": "DEBUG=WATERMARK:* npx babel-node ./dev",
-    "clean": "npx babel-node ./scripts/clean",
-    "reprepare": "npx babel-node ./scripts/re-prepare",
-    "lint": "npx eslint --cache ./src/**/*.js",
-    "license": "npx babel-node ./scripts/license",
-    "test": "npx nyc mocha --opts ./mocha.opts ./test/*-test.js",
-    "coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
-    "changelog": "npx auto-changelog -p"
-  },
+  "name": "@oopsunome/watermark",
+  "description": "给图片贴水印。",
+  "version": "1.0.5",
   "main": "src/watermark.js",
   "engines": {
     "node": ">=10.13.0"
@@ -16,25 +9,128 @@
   "files": [
     "src/**/*.js"
   ],
-  "dependencies": {
-    "debug": "^4.1.1",
-    "jimp": "^0.6.0",
-    "lodash": "^4.17.11"
+  "scripts": {
+    "start": "DEBUG=WATERMARK:* npx babel-node ./dev",
+    "clean": "npx babel-node ./scripts/clean",
+    "reprepare": "npx babel-node ./scripts/re-prepare",
+    "lint": "npx eslint --cache ./src/**/*.js",
+    "license": "npx babel-node ./scripts/license",
+    "test": "cross-env NODE_ENV=test npx babel-node ./scripts/test",
+    "coverage": "npx nyc report --reporter=text-lcov | npx coveralls",
+    "changelog": "npx auto-changelog -p"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "npx eslint --cache",
+      "yarn test"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "esmodules": true,
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "airbnb-base"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "no-console": 0,
+      "no-undef": 0,
+      "no-class-assign": 0,
+      "no-useless-catch": 0
+    }
+  },
+  "eslintIgnore": [
+    "benchmark/**",
+    "docs/**",
+    "*-test.js",
+    "esm/**",
+    ".github/**",
+    ".vscode/**",
+    "scripts/**",
+    "coverage/**"
+  ],
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "changelog-template.hbs",
+    "unreleased": true,
+    "commitLimit": false,
+    "includeBranch": [
+      "master"
+    ]
+  },
+  "gitignore": [
+    "macOS",
+    "Windows",
+    "Linux",
+    "Node",
+    "VisualStudioCode",
+    "SublimeText",
+    "CVS",
+    "Diff",
+    "Vim",
+    "TortoiseGit",
+    "Diff",
+    "Patch"
+  ],
+  "nyc": {
+    "all": true,
+    "perFile": true,
+    "reporter": [
+      "html"
+    ],
+    "report-dir": "./docs/coverage",
+    "cache": false,
+    "include": ["src/"],
+    "skipEmpty": true,
+    "clean": true
+  },
+  "mocha": {
+    "extension": [
+      "js"
+    ],
+    "timeout": 120000,
+    "ui": "bdd",
+    "color": true,
+    "delay": true,
+    "fullStackTrace": true,
+    "checkLeaks": true,
+    "retries": 2
+  },
+  "keywords": [
+    "水印",
+    "watermark",
+    "工具",
+    "tool",
+    "oopsunome"
+  ],
   "private": false,
-  "version": "1.0.5",
-  "name": "@oopsunome/watermark",
-  "description": "给图片贴水印。",
   "license": "MIT",
   "author": {
     "name": "iyowei",
     "email": "swzyocowboy@icloud.com",
     "url": "https://github.com/iTonyYo"
   },
-  "keywords": [
-    "水印",
-    "watermark"
-  ],
   "repository": {
     "url": "https://github.com/iTonyYo/watermark.git",
     "type": "git"

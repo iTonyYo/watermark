@@ -1,19 +1,57 @@
 {
-  "git.ignoreLimitWarning": true,
+  "update.showReleaseNotes": false,
+  "search.maintainFileSearchCache": true,
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "search.usePCRE2": true,
+  "window.zoomLevel": 0,
+  "zenMode.restore": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
   "terminal.integrated.rendererType": "canvas",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontFamily": "Hack",
+  "terminal.integrated.confirmOnExit": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.enableBell": true,
+  "debug.console.fontFamily": "Hack",
+  "editor.foldingStrategy": "indentation",
+  "editor.smoothScrolling": true,
+  "editor.links": false,
   "editor.tabSize": 2,
   "editor.fontFamily": "Hack",
-  "markdown.preview.fontSize": 12,
-  "files.autoSave": "onWindowChange",
-  "editor.cursorStyle": "line",
   "editor.minimap.enabled": true,
-  "zenMode.restore": true,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.renderCharacters": false,
   "editor.letterSpacing": 1,
   "editor.dragAndDrop": true,
-  "workbench.colorTheme": "Tomorrow Night Blue",
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.formatOnSave": false,
+  "editor.wordWrapColumn": 80,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "css.validate": false,
+  "css.lint.emptyRules": "ignore",
+  "markdown.preview.fontSize": 16,
+  "markdown.extension.toc.githubCompatibility": true,
+  "markdown.extension.toc.updateOnSave": false,
+  "markdown.preview.fontFamily": "-apple-system, 'Helvetica Neue', Helvetica, 'Nimbus Sans L', Arial, 'Liberation Sans', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC', 'Microsoft YaHei', 'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'ST Heiti', SimHei, 'WenQuanYi Zen Hei Sharp', sans-serif",
+  "markdown.extension.preview.autoShowPreviewToSide": false,
+  "markdown.extension.print.imgToBase64": true,
+  "workbench.sideBar.location": "right",
+  "workbench.commandPalette.history": 100,
   "workbench.iconTheme": "vscode-icons",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.labelFormat": "medium",
+  "workbench.editor.tabCloseButton": "left",
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.statusBar.visible": false,
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "onWindowChange",
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -26,37 +64,147 @@
     "**/data": true,
     "**/dump.rdb": true
   },
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.formatOnSave": false,
-  "terminal.integrated.scrollback": 500,
-  "terminal.integrated.confirmOnExit": true,
-  "editor.wordWrapColumn": 80,
+  "csv-preview.lineNumbers": "ordinal",
+  "csv-preview.resizeColumns": "all",
+  "csv-preview.theme": "light",
+  "fileutils.delete.useTrash": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.useExperimentalFileWatcher": true,
+  "atomKeymap.promptV3Features": true,
+  "explorer.confirmDragAndDrop": false,
+  "sync.gist": "7817831a489392a8ff81dbf62a3a0416",
+  "sync.quietSync": true,
+  "sync.autoUpload": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "npm.packageManager": "yarn",
   "todohighlight.keywords": [
     {
-      "text": "TODO:",
-      "color": "#fff",
+      "text": "待办：",
+      "color": "#000",
       "border": "1px solid #fff",
       "borderRadius": "3px"
     },
     {
-      "text": "FIXME:",
-      "color": "#fff",
+      "text": "开始：",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#fff"
+    },
+    {
+      "text": "处理：",
+      "color": "#000",
       "border": "1px solid #fff",
       "borderRadius": "3px"
     },
     {
-      "text": "PERFOMANCE:",
+      "text": "交互:",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px"
+    },
+    {
+      "text": "异步处理：",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#005cc5"
+    },
+    {
+      "text": "完成：",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2f3542"
+    },
+    {
+      "text": "修复：",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px"
+    },
+    {
+      "text": "性能：",
       "color": "#fff",
       "border": "1px solid #fff",
       "borderRadius": "3px",
       "backgroundColor": "#EA514E"
     },
     {
-      "text": "PENDING",
+      "text": "待定：",
       "color": "#fff",
       "border": "1px solid #fff",
       "borderRadius": "3px",
       "backgroundColor": "#005cc5"
+    },
+    {
+      "text": "工作流：",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2ed573"
+    },
+    {
+      "text": "可用性：",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#ced6e0"
+    },
+    {
+      "text": "可扩展性：",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2f3542"
+    },
+    {
+      "text": "摘要：",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#2f3542"
+    },
+    {
+      "text": "逻辑：",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#B0B6BC"
+    },
+    {
+      "text": "调试：",
+      "color": "#000",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#B0B6BC"
+    },
+    {
+      "text": "注意：",
+      "color": "#fff",
+      "border": "1px solid #2f3542",
+      "borderRadius": "3px",
+      "backgroundColor": "#2f3542"
+    },
+    {
+      "text": "问题：",
+      "color": "#fff",
+      "border": "1px solid #fff",
+      "borderRadius": "3px",
+      "backgroundColor": "#fc8458"
     }
   ],
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.md"
+  ]
 }
