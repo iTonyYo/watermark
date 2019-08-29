@@ -1,7 +1,23 @@
 # [`@oopsunome/watermark`](https://github.com/iTonyYo/watermark) 更新日志
 
-## [v1.0.5](https://github.com/iTonyYo/watermark/compare/v1.0.5...v1.0.5) - 2019-01-09
+## [v1.0.6](https://github.com/iTonyYo/watermark/compare/v1.0.5...v1.0.6) - 2019-08-29
 
+#### 提交
+
+- [[`e5973a0`](https://github.com/iTonyYo/watermark/commit/e5973a0f0e9db70606c3550f71c04e847b99303b)] 依赖: :arrow_up: 更新依赖
+- [[`a1da478`](https://github.com/iTonyYo/watermark/commit/a1da4783a00df8473a7c7e1d56cac1a9010c95f2)] 配置: :wrench: 更新项目配置
+- [[`a77bb15`](https://github.com/iTonyYo/watermark/commit/a77bb151295164a34d695cf50ae7f9e2b7570598)] 文档: :memo: 更新文档
+- [[`2d60b5e`](https://github.com/iTonyYo/watermark/commit/2d60b5eebac6352d5df1ab74c2c7b3fe48920626)] 工作流: :railway_track: 更新自动化指令
+- [[`f79a1c5`](https://github.com/iTonyYo/watermark/commit/f79a1c5a6a58823ac3d693315f151f99401d0d3a)] 测试: :white_check_mark: 更新测试用例
+- [[`cb7f02b`](https://github.com/iTonyYo/watermark/commit/cb7f02bcb89c7447cafa5a2c4b9cb4e134358d77)] 配置: :wrench: 新增 `Code Climate` 配置
+- [[`54bfee0`](https://github.com/iTonyYo/watermark/commit/54bfee0ff1cf55242582c639d7c1e500d00c10fa)] 工程: :arrow_up: 升级开发依赖
+- [[`e345c2a`](https://github.com/iTonyYo/watermark/commit/e345c2ab22f0cf88bcab7acdfaf1e4437cc932ac)] 文档: :memo: 提供专门针对 Github 的问题、混合请求消息模板
+## [v1.0.5](https://github.com/iTonyYo/watermark/compare/v1.0.4...v1.0.5) - 2019-01-09
+
+#### 提交
+
+- [[`7d7bde8`](https://github.com/iTonyYo/watermark/commit/7d7bde8f53e47681853f9514dd1338cd1581ad9c)] 工程: :clapper: 配置更新日志
+- [[`f2a6b30`](https://github.com/iTonyYo/watermark/commit/f2a6b302dfb86ad732f778b5a4a1d80a394e5971)] 文档: :memo: 更新文档
 ## [v1.0.4](https://github.com/iTonyYo/watermark/compare/v1.0.3...v1.0.4) - 2019-01-08
 
 #### 提交

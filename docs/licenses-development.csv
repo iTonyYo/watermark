@@ -75,7 +75,7 @@
 "@nodelib/fs.scandir@2.1.1","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir"
 "@nodelib/fs.stat@2.0.1","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat"
 "@nodelib/fs.walk@1.2.2","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk"
-"@oopsunome/watermark@1.0.5","MIT","https://github.com/iTonyYo/watermark"
+"@oopsunome/watermark@1.0.6","MIT","https://github.com/iTonyYo/watermark"
 "@samverschueren/stream-to-observable@0.3.0","MIT","https://github.com/SamVerschueren/stream-to-observable"
 "@sindresorhus/df@1.0.1","MIT","https://github.com/sindresorhus/df"
 "@sindresorhus/df@2.1.0","MIT","https://github.com/sindresorhus/df"

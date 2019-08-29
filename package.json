@@ -1,7 +1,7 @@
 {
   "name": "@oopsunome/watermark",
   "description": "给图片贴水印。",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "src/watermark.js",
   "engines": {
     "node": ">=10.13.0"
