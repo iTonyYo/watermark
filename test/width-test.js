@@ -7,12 +7,12 @@ import Jimp from 'jimp';
 import width from '../src/width';
 
 const appDirectory = realpathSync(process.cwd());
-const resolveApp   = relativePath => resolve(appDirectory, relativePath);
+const resolveCwd   = relativePath => resolve(appDirectory, relativePath);
 
 setTimeout(async () => {
   const imgs = await Promise.all([
-    Jimp.read(resolveApp('test/mark.png')),
-    Jimp.read(resolveApp('test/paper.png')),
+    Jimp.read(resolveCwd('test/mark.png')),
+    Jimp.read(resolveCwd('test/paper.png')),
   ]);
   const jimpMark = imgs[0].scale(0.2);
   const jimpPaper = imgs[1];
