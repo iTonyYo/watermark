@@ -1,12 +1,18 @@
 # [`@oopsunome/watermark`](https://github.com/iTonyYo/watermark) 更新日志
 
+## [v1.0.7](https://github.com/iTonyYo/watermark/compare/v1.0.6...v1.0.7) - 2019-10-08
+
+#### 提交
+
+- [[`a279df5`](https://github.com/iTonyYo/watermark/commit/a279df59fe4c6095f6a22fbf83811b9b1f415e47)] 依赖: :arrow_up: 升级依赖
+- [[`6082764`](https://github.com/iTonyYo/watermark/commit/60827641e614489b3468b2b52a780cc3655076c4)] 依赖: :arrow_up: 升级依赖
+- [[`f703e93`](https://github.com/iTonyYo/watermark/commit/f703e9364a9e2a03af8a5eb1be9ff0e3e983ba05)] 配置: :wrench: 避免将更新日志打包发布
 ## [v1.0.6](https://github.com/iTonyYo/watermark/compare/v1.0.5...v1.0.6) - 2019-08-29
 
 #### 提交
 
 - [[`e5973a0`](https://github.com/iTonyYo/watermark/commit/e5973a0f0e9db70606c3550f71c04e847b99303b)] 依赖: :arrow_up: 更新依赖
 - [[`a1da478`](https://github.com/iTonyYo/watermark/commit/a1da4783a00df8473a7c7e1d56cac1a9010c95f2)] 配置: :wrench: 更新项目配置
-- [[`6082764`](https://github.com/iTonyYo/watermark/commit/60827641e614489b3468b2b52a780cc3655076c4)] 依赖: :arrow_up: 升级依赖
 - [[`a77bb15`](https://github.com/iTonyYo/watermark/commit/a77bb151295164a34d695cf50ae7f9e2b7570598)] 文档: :memo: 更新文档
 - [[`2d60b5e`](https://github.com/iTonyYo/watermark/commit/2d60b5eebac6352d5df1ab74c2c7b3fe48920626)] 工作流: :railway_track: 更新自动化指令
 - [[`f79a1c5`](https://github.com/iTonyYo/watermark/commit/f79a1c5a6a58823ac3d693315f151f99401d0d3a)] 测试: :white_check_mark: 更新测试用例
