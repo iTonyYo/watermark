@@ -2,7 +2,7 @@ import { realpathSync } from 'fs';
 import { resolve } from 'path';
 
 const appDirectory = realpathSync(process.cwd());
-const resolveCwd = relativePath => resolve(appDirectory, relativePath);
+const resolveCwd = (relativePath) => resolve(appDirectory, relativePath);
 
 const watermark = require('./src/watermark');
 
