@@ -139,7 +139,7 @@
   "bugs": "https://github.com/iTonyYo/watermark/issues",
   "dependencies": {
     "debug": "^4.1.1",
-    "jimp": "^0.8.4",
+    "jimp": "^0.12.0",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
